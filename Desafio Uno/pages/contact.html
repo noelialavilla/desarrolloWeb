@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Grace Aromas</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+</html>
+
+<body>
+  <!-- Cabecera de la pagina -->
+  <header>
+    <!-- Logo de mi pagina -->
+    <h1>Grace Aromas</h1>
+    <!-- Fin del logo de la pagina -->
+    <!-- Barra de navegacion -->
+    <nav>
+      <!-- Enlaces de la barra de navegacion -->
+      <ul class="box">
+        <li class="flex"><a href="../index.html">Inicio</a></li>
+        <li class="flex"><a href="./about.html">Nosotros</a></li>
+        <li class="flex"><a href="./products.html">Productos</a></li>
+        <li class="flex"><a href="./contact.html">Contacto</a></li>
+        <li class="flex"><a href="./sale.html">SALE</a></li>
+      </ul>
+      <!-- Fin de los enlaces de la barra de navegacion  -->
+    </nav>
+    <!-- Fin de la barra de la navegacion  -->
+  </header>
+  <!-- Fin de la cabecera -->
+  <div class="main-content">
+    <h2>Formulario de contacto</h2>
+    <h3 class="subtitle">Por favor completa el siguiente formulario</h3>
+    <form class="form">
+      <label for="name">Nombre y apellido</label>
+      <input id="name" type="text" />
+      <hr />
+      <label for="country">País</label>
+      <select>
+        <option selected="selected">Seleccione un pais</option>
+        <option>Argentina</option>
+        <option>Perú</option>
+        <option>Mexico</option>
+        <option>Bolivia</option>
+      </select>
+      <hr />
+      <label for="phone">Teléfono</label>
+      <input id="phone" type="text" />
+      <hr />
+      <label for="email">Correo electrónico</label>
+      <input id="email" type="email" />
+      <hr />
+      <label>Como nos conociste?</label>
+      <br />
+      <br />
+      <span>Instagram</span>
+      <input type="radio" name="ig">
+      <span>Facebook</span>
+      <input type="radio" name="fb">
+      <span>Amigos</span>
+      <input type="radio" name="fr">
+      <span>Otros</span>
+      <input type="radio" name="others">
+      <hr />
+      <label>Quiere recibir información sobre nuestras promociones? </label>
+      <br />
+      <span>Si</span>
+      <input type="checkbox">
+      <span>No</span>
+      <input type="checkbox">
+      <br />
+      <hr/>
+      <label for="mensaje">Escriba su mensaje</label>
+      <input id="msj" type="text" />
+      <br />
+      <hr/>
+      <button type="submit">Enviar</button>
+      <button type="reset">Refrescar</button>
+    </form>
+  </div>
+  <br />
+  <br />
+  <footer>
+    <ul>
+      <li><a href="./pages/contact.html">Contacto</a></li>
+      <li><a href="https://www.instagram.com/grace.aromas/" target="_blank">Seguinos en Instagram!</a></li>
+    </ul>
+  </footer>
+</body>
