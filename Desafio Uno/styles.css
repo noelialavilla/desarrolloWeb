@@ -20,7 +20,7 @@ header {
     text-align: left;
     padding-bottom: 15px;
     padding-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 
 }
 /* h1{
@@ -42,8 +42,6 @@ a{
     flex-direction: row;
     list-style-type: none;
     display: flex;
-
-
 }
 
 .flex {
@@ -55,14 +53,14 @@ a{
     /* margin-bottom: 50px; */
     border: 3px solid #f29abe;
 }
-.logo, .sale, .galeria{
+.logo{
     padding-left: 40px;
     padding-bottom: 20px;
 }
 .main-content{
     margin: 100px;
 }
- ul {
+ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -88,7 +86,3 @@ footer {
 
 }
 
-/* body{
-    height: 100%;
-}
- */
