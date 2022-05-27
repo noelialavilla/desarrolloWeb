@@ -36,6 +36,11 @@ body {
 
 a{
     text-decoration: none;
+    color:black;
+    
+}
+a:after{
+    color:black;
 }
 .box {
     flex-direction: row;
@@ -51,6 +56,9 @@ a{
     position: relative;
     padding: 10px;
     border: 3px solid #f29abe;
+}
+.flex:hover{
+    background-color: #ccc;
 }
 .logo{
     padding-left: 40px;
