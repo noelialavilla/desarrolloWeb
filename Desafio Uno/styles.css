@@ -20,24 +20,22 @@ header {
     text-align: left;
     padding-bottom: 5px;
     padding-top: 20px;
-    
 }
-/* h1{
-    font-family: 'Westwood Studio', sans-serif;
-    font-size: 70px;
-} */
+
 body {
+    background-image: url("./assets/Background.jpg");
     margin: 0px;
     margin-bottom: 40px;
     display: block;
     max-width: 100%;
+    
 }
 
 
 a{
     text-decoration: none;
     color:black;
-    
+
 }
 a:after{
     color:black;
@@ -50,7 +48,6 @@ a:after{
 }
 
 .flex {
-    /* flex-basis: fill; */
     flex-grow: 1;
     text-align: center;
     position: relative;
@@ -84,13 +81,7 @@ footer {
     bottom: 0;
     width: 100%;
     height: 50px;
-    /* position: fixed;
-    left: 0px;
-    bottom: 0px;
-    height: 30px;
-    width: 100%;
-     */
-
+   
 }
 
 .container {
@@ -106,14 +97,12 @@ footer {
     user-select: none;
   }
   
-  /* Hide the browser's default radio button */
   .container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
   }
   
-  /* Create a custom radio button */
   .checkmark {
     position: absolute;
     top: 0;
@@ -124,30 +113,29 @@ footer {
     border-radius: 50%;
   }
   
-  /* On mouse-over, add a grey background color */
+  
   .container:hover input ~ .checkmark {
     background-color: #ccc;
   }
   
-  /* When the radio button is checked, add a blue background */
+  
   .container input:checked ~ .checkmark {
-    /* background-color: #2196F3; */
+  
     background-color:#f29abe;
   }
   
-  /* Create the indicator (the dot/circle - hidden when not checked) */
+  
   .checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
   
-  /* Show the indicator (dot/circle) when checked */
+  
   .container input:checked ~ .checkmark:after {
     display: block;
   }
   
-  /* Style the indicator (dot/circle) */
   .container .checkmark:after {
        top: 5px;
       left: 4.5px;
