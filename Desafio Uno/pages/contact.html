@@ -37,6 +37,7 @@
   <div class="main-content">
     <h2>Formulario de contacto</h2>
     <h3 class="subtitle">Por favor completa el siguiente formulario</h3>
+    <hr />
     <form class="form">
       <label for="name">Nombre y apellido</label>
       <input id="name" type="text" />
@@ -59,22 +60,34 @@
       <label>Como nos conociste?</label>
       <br />
       <br />
-      <span>Instagram</span>
-      <input type="radio" name="ig">
-      <span>Facebook</span>
-      <input type="radio" name="fb">
-      <span>Amigos</span>
-      <input type="radio" name="fr">
-      <span>Otros</span>
-      <input type="radio" name="others">
-      <hr />
+      <label class="container">Instagram
+        <input type="radio" checked="checked" name="rbtn__redes">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Facebook
+        <input type="radio" name="rbtn__redes">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Amigos
+        <input type="radio" name="rbtn__redes">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Otros
+        <input type="radio" name="rbtn__redes">
+        <span class="checkmark"></span>
+      </label>
+      <hr/>
       <label>Quiere recibir información sobre nuestras promociones? </label>
       <br />
-      <span>Si</span>
-      <input type="checkbox">
-      <span>No</span>
-      <input type="checkbox">
       <br />
+      <label class="container">Si
+        <input type="radio" checked="checked" name="rbtn__info">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">No
+        <input type="radio" name="rbtn__info">
+        <span class="checkmark"></span>
+      </label>
       <hr/>
       <label for="mensaje">Escriba su mensaje</label>
       <input id="msj" type="text" />
