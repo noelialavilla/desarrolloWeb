@@ -41,6 +41,7 @@ a:after {
 .logo {
     padding-left: 40px;
     padding-bottom: 20px;
+    
 }
 
 .main-content {
@@ -135,6 +136,12 @@ footer {
 ul, li{
     list-style: none;
 }  
+
+.a:hover{
+    text-decoration:none;
+    color:black;
+}
+
 .flex {
     flex-grow: 1;  
     text-align: center;

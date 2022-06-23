@@ -15,30 +15,35 @@
 
 </html>
 
-<body id="grilla">
-  <!-- Cabecera de la pagina -->
-  <header>
-    <!-- Logo de mi pagina -->
-    <div>
-      <img class="logo" src="../assets/GraceAromasLogo.png" alt="GALogo" title="Grace Aromas" height="96px"
-        width="180" />
+<body>
+  
+  <header class="container-fluid">
+    <div class="row">
+      <a class="navbar-brand" href="./index.html">
+        <img class="logo" src="../assets/GraceAromasLogo.png" alt="GALogo" title="Grace Aromas" height="96px"
+          width="180" />
+      </a>
     </div>
-    <!-- Fin del logo de la pagina -->
-    <!-- Barra de navegacion -->
-    <nav class="side-menu">
-      <!-- Enlaces de la barra de navegacion -->
-      <ul class="grid">
-        <li class="flex"><a href="../index.html">Inicio</a></li>
-        <li class="flex"><a href="./about.html">Nosotros</a></li>
-        <li class="flex"><a href="./products.html">Productos</a></li>
-        <li class="flex"><a href="./contact.html">Contacto</a></li>
-        <li class="flex"><a href="./sale.html">SALE</a></li>
-      </ul>
-      <!-- Fin de los enlaces de la barra de navegacion  -->
-    </nav>
-    <!-- Fin de la barra de la navegacion  -->
+
+    <div class="row">
+      <nav class="navbar navbar-expand-sm navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <div class="navbar-nav grid">
+            <a class="nav-link flex" href="../index.html">Inicio</a>
+            <a class="nav-link flex" href="./about.html">Nosotros</a>
+            <a class="nav-link flex" href="./products.html">Productos</a>
+            <a class="nav-link flex" href="./contact.html">Contacto</a>
+            <a class="nav-link flex" href="./sale.html">SALE</a>
+          </div>
+        </div>
+
+      </nav>
+    </div>
   </header>
-  <!-- Fin de la cabecera -->
+  
   <main class="main-content">
     <div class="about">
       <h1>Sobre nosotros</h1>
