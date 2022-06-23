@@ -15,7 +15,6 @@ html {
 }
 
 header {
-    grid-area: header;
     text-align: left;
     padding-bottom: 5px;
     padding-top: 20px;
@@ -27,7 +26,6 @@ body {
     margin: 0px;
     display: block;
     max-width: 100%;
-
 }
 a {
     text-decoration: none;
@@ -53,6 +51,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display:flex;
 
 }
 
@@ -60,7 +59,7 @@ footer {
     grid-area: footer;
     background-image: linear-gradient(to left,#F999B7, #F9C5D5);
     text-align: center;
-    padding: 10px;
+    padding: 0px;
     margin-bottom: 0px;
     position: absolute;
     bottom: 0;
@@ -131,30 +130,20 @@ footer {
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    
-}
-.main-content{
-    grid-area: main-content;
-}
-#grilla{
-    display:grid;
-    grid-template-areas:
-    "header"
-    "nav"
-    "main-content"
-    "footer";
-    grid-template-rows: 130px 20px 1fr 40px;
-    grid-template-columns: 1fr;
-}
+} 
 
+ul, li{
+    list-style: none;
+}  
 .flex {
-    flex-grow: 1; 
+    flex-grow: 1;  
     text-align: center;
     position: relative; 
     padding: 10px; 
     border: 3px solid #F999B7;
     border-radius: 5px;
     background-color: white;
+    /* flex-direction: column; */
 }
 .flex:hover {
     background-color: #ccc;
@@ -259,6 +248,7 @@ footer {
     .btn-grace {
         padding: 0 40px;
        
-      }
+    }
+   
      
 }
