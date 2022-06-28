@@ -33,8 +33,11 @@ a {
   text-decoration: none;
   color: black;
 }
-
 a:after {
+  color: black;
+}
+a:hover {
+  text-decoration: none;
   color: black;
 }
 
@@ -101,6 +104,11 @@ footer {
   background-color: #eee;
   border-radius: 50%;
 }
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
 
 .contenedor_btn:hover input ~ .checkmark {
   background-color: #ccc;
@@ -108,12 +116,6 @@ footer {
 
 .contenedor_btn input:checked ~ .checkmark {
   background-color: #F999B7;
-}
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
 }
 
 .contenedor_btn input:checked ~ .checkmark:after {
@@ -125,13 +127,9 @@ footer {
   grid-template-columns: 1fr;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
-}
-
-.a:hover {
-  text-decoration: none;
-  color: black;
 }
 
 .flex {
@@ -144,7 +142,6 @@ ul, li {
   background-color: white;
   /* flex-direction: column; */
 }
-
 .flex:hover {
   background-color: #ccc;
 }
@@ -157,7 +154,6 @@ ul, li {
   margin: 5px;
   transition: all 0.5s;
 }
-
 .prod:hover {
   border: 5px solid white;
 }
@@ -188,7 +184,6 @@ ul, li {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-
 .btn-grace:after {
   background-color: #111;
   border-radius: 8px;
@@ -203,17 +198,14 @@ ul, li {
   transition: transform 0.2s ease-out;
   z-index: -1;
 }
-
 .btn-grace:hover:after {
   transform: translate(0, 0);
 }
-
-.btn-grace:active {
-  background-color: #FEE3EC;
+.btn-grace:hover {
   outline: 0;
 }
-
-.btn-grace:hover {
+.btn-grace:active {
+  background-color: #FEE3EC;
   outline: 0;
 }
 
