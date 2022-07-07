@@ -63,7 +63,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 100px;
+  height: 200px;
   border: 5px, solid, white;
 }
 
@@ -216,6 +216,8 @@ ul, li {
 .btn-grace:hover {
   outline: 0;
 }
+
+
 
 @media screen and (min-width: 768px) {
   * {
