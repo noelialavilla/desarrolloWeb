@@ -16,8 +16,7 @@ html {
 header {
   text-align: left;
   padding-bottom: 5px;
-  padding-top: 20px;
-  background-image: linear-gradient(to left, #F999B7, #F9C5D5); }
+  padding-top: 20px; }
 
 body {
   background-image: url("./assets/Background.jpg");
@@ -49,7 +48,6 @@ ul {
 
 footer {
   grid-area: footer;
-  background-image: linear-gradient(to left, #F999B7, #F9C5D5);
   text-align: center;
   padding: 0px;
   margin-bottom: 0px;
@@ -135,6 +133,59 @@ li {
 .buttons {
   display: flex; }
 
+@media screen and (min-width: 768px) {
+  * {
+    font-size: 15px; }
+  .grid {
+    grid-template-columns: repeat(5, 1fr); }
+  footer {
+    height: 50px; }
+  .checkmark {
+    height: 15px;
+    width: 15px; }
+  .container .checkmark:after {
+    top: 5px;
+    left: 4.5px;
+    width: 6.5px;
+    height: 6.5px; }
+  .btn-grace {
+    padding: 0 40px; } }
+
+footer {
+  background-image: linear-gradient(to left, #F999B7, #F9C5D5); }
+
+header {
+  background-image: linear-gradient(to left, #F999B7, #F9C5D5);
+  text-align: left; }
+
+* {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 30px; }
+
+.btn-twitter {
+  color: #ffffff;
+  border: 0;
+  padding: 10px;
+  border-radius: 05px;
+  cursor: pointer;
+  background-color: #55acee; }
+
+.btn-facebook {
+  color: #ffffff;
+  border: 0;
+  padding: 10px;
+  border-radius: 05px;
+  cursor: pointer;
+  background-color: #3a5795; }
+
+.btn-send-email {
+  color: #ffffff;
+  border: 0;
+  padding: 10px;
+  border-radius: 05px;
+  cursor: pointer;
+  background-color: #c25e30; }
+
 .btn-grace {
   align-items: center;
   background-color: #FEE3EC;
@@ -177,45 +228,16 @@ li {
     background-color: #FEE3EC;
     outline: 0; }
 
-@media screen and (min-width: 768px) {
-  * {
-    font-size: 15px; }
-  .grid {
-    grid-template-columns: repeat(5, 1fr); }
-  footer {
-    height: 50px; }
-  .checkmark {
-    height: 15px;
-    width: 15px; }
-  .container .checkmark:after {
-    top: 5px;
-    left: 4.5px;
-    width: 6.5px;
-    height: 6.5px; }
-  .btn-grace {
-    padding: 0 40px; } }
+.btn-grace--enviar:active {
+  background-color: #F9C5D5;
+  outline: 0; }
 
-.btn-twitter {
-  color: #ffffff;
-  border: 0;
-  padding: 10px;
-  border-radius: 05px;
-  cursor: pointer;
-  background-color: #55acee; }
+.btn-grace--enviar:after {
+  background-color: #F999B7; }
 
-.btn-facebook {
-  color: #ffffff;
-  border: 0;
-  padding: 10px;
-  border-radius: 05px;
-  cursor: pointer;
-  background-color: #3a5795; }
+.btn-grace--refrescar:active {
+  background-color: gray;
+  outline: 0; }
 
-.btn-send-email {
-  color: #ffffff;
-  border: 0;
-  padding: 10px;
-  border-radius: 05px;
-  cursor: pointer;
-  background-color: #c25e30; 
-}
+.btn-grace--refrescar:after {
+  background-color: #111; }
