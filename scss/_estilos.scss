@@ -1,0 +1,270 @@
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+@font-face {
+    font-family: 'Westwood Studio';
+    src: url('./assets/WestwoodStudio.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+header {
+    text-align: left;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    background-image: linear-gradient(to left, #F999B7, #F9C5D5);
+}
+
+body {
+    background-image: url("./assets/Background.jpg");
+    margin: 0px;
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+    &:after {
+        color: black;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.logo {
+    padding-left: 40px;
+    padding-bottom: 20px;
+
+}
+
+.main-content {
+    margin: 100px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+
+}
+
+footer {
+    grid-area: footer;
+    background-image: linear-gradient(to left, #F999B7, #F9C5D5);
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    border: 5px, solid, white;
+}
+
+.contenedor_btn {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .checkmark {
+        &:after {
+            top: 6px;
+            left: 6px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: white;
+        }
+    }
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #eee;
+    border-radius: 50%;
+
+    &:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+}
+
+.contenedor_btn:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.contenedor_btn input:checked~.checkmark {
+    background-color: #F999B7;
+}
+
+
+.contenedor_btn input:checked~.checkmark:after {
+    display: block;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.flex {
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    border: 3px solid #F999B7;
+    border-radius: 5px;
+    background-color: white;
+
+    /* flex-direction: column; */
+    &:hover {
+        background-color: #ccc;
+    }
+}
+
+
+.productos {
+    display: flex;
+
+}
+
+.prod {
+    margin: 5px;
+    transition: all 0.5s;
+
+    &:hover {
+        border: 5px solid white;
+    }
+}
+
+
+.buttons {
+    display: flex;
+}
+
+
+.btn-grace {
+    align-items: center;
+    background-color: #FEE3EC;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    margin: 5px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+    &:after {
+        background-color: #111;
+        border-radius: 8px;
+        content: "";
+        display: block;
+        height: 48px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        top: -2px;
+        transform: translate(8px, 8px);
+        transition: transform .2s ease-out;
+        z-index: -1;
+    }
+
+    &:hover:after {
+        transform: translate(0, 0);
+    }
+
+    &:hover {
+        outline: 0;
+    }
+
+    &:active {
+        background-color: #FEE3EC;
+        outline: 0;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    * {
+
+        font-size: 15px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    footer {
+        height: 50px;
+    }
+
+    .checkmark {
+        height: 15px;
+        width: 15px;
+    }
+
+    .container {
+        .checkmark {
+            &:after {
+                top: 5px;
+                left: 4.5px;
+                width: 6.5px;
+                height: 6.5px;
+            }
+        }
+    }
+
+    .btn-grace {
+        padding: 0 40px;
+
+    }
+
+}
