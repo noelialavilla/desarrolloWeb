@@ -186,7 +186,7 @@ header {
   cursor: pointer;
   background-color: #c25e30; }
 
-.btn-grace {
+.btngrace, .btngrace--enviar, .btngrace--refrescar {
   align-items: center;
   background-color: #FEE3EC;
   border: 2px solid #111;
@@ -207,7 +207,7 @@ header {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation; }
-  .btn-grace:after {
+  .btngrace:after, .btngrace--enviar:after, .btngrace--refrescar:after {
     background-color: #111;
     border-radius: 8px;
     content: "";
@@ -220,24 +220,24 @@ header {
     transform: translate(8px, 8px);
     transition: transform .2s ease-out;
     z-index: -1; }
-  .btn-grace:hover:after {
+  .btngrace:hover:after, .btngrace--enviar:hover:after, .btngrace--refrescar:hover:after {
     transform: translate(0, 0); }
-  .btn-grace:hover {
+  .btngrace:hover, .btngrace--enviar:hover, .btngrace--refrescar:hover {
     outline: 0; }
-  .btn-grace:active {
+  .btngrace:active, .btngrace--enviar:active, .btngrace--refrescar:active {
     background-color: #FEE3EC;
     outline: 0; }
 
-.btn-grace--enviar:active {
+.btngrace--enviar:active {
   background-color: #F9C5D5;
   outline: 0; }
 
-.btn-grace--enviar:after {
+.btngrace--enviar:after {
   background-color: #F999B7; }
 
-.btn-grace--refrescar:active {
+.btngrace--refrescar:active {
   background-color: gray;
   outline: 0; }
 
-.btn-grace--refrescar:after {
+.btngrace--refrescar:after {
   background-color: #111; }

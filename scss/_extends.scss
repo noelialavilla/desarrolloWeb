@@ -1,4 +1,4 @@
-.btn-grace {
+.btngrace {
     align-items: center;
     background-color: #FEE3EC;
     border: 2px solid #111;
@@ -49,7 +49,8 @@
     }
 }
 
-.btn-grace--enviar{
+.btngrace--enviar{
+    @extend.btngrace;
     &:active {
         background-color: #F9C5D5;
         outline: 0;
@@ -59,7 +60,8 @@
     }
 
 }
-.btn-grace--refrescar{
+.btngrace--refrescar {
+    @extend.btngrace;
     &:active {
         background-color: gray;
         outline: 0;
