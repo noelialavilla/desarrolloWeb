@@ -228,6 +228,18 @@ li {
 .buttons {
   display: flex; }
 
+.parrafo-bienvenida {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: whitesmoke;
+  font-size: 1rem;
+  background-color: #f5a8c0;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 10px 10px; }
+
+.titulo {
+  font-size: 1.5em; }
+
 @media screen and (min-width: 768px) {
   * {
     font-size: 15px; }
