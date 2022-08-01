@@ -5,15 +5,29 @@ $redes: (
     send-email: #c25e30
 );
 
-@each $redSocial, $color in $redes {
-    .btn-#{$redSocial}{
-        color: #ffffff;
-        border:0;
-        padding: 10px;
-        border-radius: 05px;
-        cursor:pointer;
-        background-color: $color;
-    }
-    
+
+
+$estilos: (
+  back-color: linear-gradient(to left, #F999B7, #F9C5D5),
+  derecha: right,
+  centro: center,
+  izquierda: left,
+  font: 'Nanum Gothic', 
+  font-size: 30px,
+  rem: 1rem
+);
+
+footer {
+  background-image: map-get($estilos, back-color);
+
 }
 
+header{
+  background-image: map-get($estilos, back-color);
+  text-align: map-get($estilos, izquierda);
+}
+
+*{
+  font-family: map-get($estilos, font), sans-serif;
+  font-size: map-get($estilos, font-size);
+}
