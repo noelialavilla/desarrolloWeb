@@ -118,7 +118,7 @@ header {
   padding-top: 20px; }
 
 body {
-  background-image: url("./assets/Background.jpg");
+  background-image: url("../assets/Background.jpg");
   margin: 0px;
   display: block;
   max-width: 100%; }
@@ -237,9 +237,91 @@ li {
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.5) 1px 10px 10px; }
 
-.titulo {
-  font-size: 1.5em; }
+  
+.tarjeta {
+  width: 16rem;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FCF4F0;
+  margin-top: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 10px 10px;
+  border: 1px solid whitesmoke;
+}
 
+.foto-producto {
+  width: auto;
+  height: 19rem;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.tamanio-producto {
+  width: 14rem;
+  height: 19rem;
+}
+
+.titulo {
+  font-size: 2em;
+}
+
+.pizarra-venta {
+  width: 16rem;
+  height: auto;
+  font-size: 1em;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #F999B7, #F9C5D5);
+  color: whitesmoke;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+.boton-venta {
+  width: 12em;
+  padding: 0.2rem 1rem;
+}
+.boton-cart{
+  width: 15em;
+  height: 5em;
+  font-size: 3em;
+}
+.boton-venta, .boton {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 0.9em;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 10px 10px;
+  text-decoration: none;
+  text-align: center;
+  background:  #F9C5D5;
+  border: 0.2px solid whitesmoke;
+  transition: background-color 1s;
+}
+.boton-venta:hover, .boton:hover {
+  color: whitesmoke;
+  background-color: #F999B7;
+  border: none;
+}
+.barraCart{
+  justify-content: right;
+}
+.subtitulo, .titulo {
+  color: white;
+  background-image: linear-gradient(to right, #F999B7, #F9C5D5);
+  text-align: center;
+  padding: auto;
+  margin-bottom: 3px;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 10px 10px;
+}
+
+.redes{
+  justify-content: space-around;
+  align-items: center;
+}
 @media screen and (min-width: 768px) {
   * {
     font-size: 15px; }
