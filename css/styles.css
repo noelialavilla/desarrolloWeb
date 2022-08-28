@@ -143,7 +143,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  display: flex; }
+  display: flex; } 
 
 footer {
   grid-area: footer;
@@ -202,7 +202,7 @@ footer {
 
 ul,
 li {
-  list-style: none; }
+  list-style: none; } 
 
 .flex {
   flex-grow: 1;
@@ -289,6 +289,7 @@ li {
   width: 15em;
   height: 5em;
   font-size: 3em;
+  cursor: pointer;
 }
 .boton-venta, .boton {
   color: whitesmoke;
@@ -322,6 +323,8 @@ li {
   justify-content: space-around;
   align-items: center;
 }
+
+
 @media screen and (min-width: 768px) {
   * {
     font-size: 15px; }
