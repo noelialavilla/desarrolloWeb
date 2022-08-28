@@ -118,7 +118,7 @@ header {
   padding-top: 20px; }
 
 body {
-  background-image: url("./assets/Background.jpg");
+  background-image: url("../assets/Background.jpg");
   margin: 0px;
   display: block;
   max-width: 100%; }
@@ -285,7 +285,11 @@ li {
   width: 12em;
   padding: 0.2rem 1rem;
 }
-
+.boton-cart{
+  width: 15em;
+  height: 5em;
+  font-size: 3em;
+}
 .boton-venta, .boton {
   color: whitesmoke;
   font-weight: bold;
@@ -302,7 +306,9 @@ li {
   background-color: #F999B7;
   border: none;
 }
-
+.barraCart{
+  justify-content: right;
+}
 .subtitulo, .titulo {
   color: white;
   background-image: linear-gradient(to right, #F999B7, #F9C5D5);
@@ -310,6 +316,11 @@ li {
   padding: auto;
   margin-bottom: 3px;
   box-shadow: rgba(0, 0, 0, 0.5) 1px 10px 10px;
+}
+
+.redes{
+  justify-content: space-around;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   * {
