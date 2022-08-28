@@ -38,6 +38,8 @@ function pagar(medioDePago){
         case '2':
             alert("Se realizo el pago con transferencia. ");
             break;
+        default:
+            break;
     }
     
 }
