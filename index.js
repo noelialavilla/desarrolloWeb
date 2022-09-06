@@ -1,4 +1,4 @@
-let productos = document.getElementById()
+
 class Producto{
     constructor(id, nombre, precio)
     {
@@ -12,6 +12,7 @@ class Carrito{
     constructor(){
         this.items=[];
     }
+    
     agregarAlCarrito(producto){
         this.items.push(producto);
         alert("Se agregó " +producto.nombre + " al carrito");
