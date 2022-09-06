@@ -1,3 +1,4 @@
+let productos = document.getElementById()
 class Producto{
     constructor(id, nombre, precio)
     {
